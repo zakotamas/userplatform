@@ -1,0 +1,108 @@
+/* Az egész oldal alapstílusa */
+body {
+    font-family: Arial, sans-serif; /* Egyszerű, jól olvasható betűtípus */
+    display: flex; /* Középre helyezzük a tartalmat */
+    flex-direction: column; /* Elemek egymás alatt helyezkedjenek el */
+    justify-content: center; /* Vízszintesen középre igazítás */
+    align-items: center; /* Függőlegesen középre igazítás */
+    height: 100vh; /* Teljes képernyőmagasság kihasználása */
+    background-color: #f5f5f5; /* Világos háttér, modern megjelenés érdekében */
+}
+
+/* Fő konténer, amely a táblázatot tartalmazza */
+.container {
+    background: white; /* Fehér hátteret kap a jobb olvashatóság érdekében */
+    padding: 20px; /* Térköz a tartalmak körül */
+    border-radius: 10px; /* Lekerekített sarkok */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Árnyékolás, hogy kiemelkedjen */
+    text-align: center; /* Középre igazított tartalom */
+    width: 800px; /* **Nagyobb szélesség**, hogy hosszú városnevek is jól megjelenjenek */
+}
+
+/* Input mezők és legördülő lista */
+input, select {
+    width: 80%; /* Megfelelő méretű mezők */
+    padding: 8px; /* Kényelmes térköz az inputokban */
+    margin: 5px auto; /* Középre helyezés */
+    border: 1px solid #ccc; /* Halvány keret */
+    border-radius: 5px; /* Lekerekített élek */
+    display: block; /* Minden input teljes szélességben jelenjen meg */
+}
+
+/* Hozzáadás gomb közvetlenül a legördülő lista alatt legyen */
+#addButton {
+    display: block; /* Blokk szintű elem */
+    margin: 10px auto; /* Középre igazítás */
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background-color: #005bb5;
+}
+
+/* Táblázat formázása */
+table {
+    width: 100%; /* A teljes konténer szélességét kitölti */
+    margin-top: 10px; /* Távolság az input mezőktől */
+    border-collapse: collapse; /* A cellák ne legyenek különállók */
+}
+
+/* Táblázat fejlécek és cellák */
+th, td {
+    padding: 15px; /* Több térköz, hogy jól formázott legyen */
+    border: 1px solid #ddd; /* Halvány keret minden cella körül */
+}
+
+/* Táblázat fejlécek */
+th {
+    background-color: #0073e6; /* Kék háttér */
+    color: white; /* Fehér betűszín */
+}
+
+/* Műveletek gombjai a táblázatban */
+td button {
+    background: red; /* Piros gomb a törléshez */
+    color: white; /* Fehér betűszín */
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background: darkred; /* Sötétebb piros hover állapotban */
+}
+
+/* Frissítés kijelző konténer a táblázat alatt */
+.refresh-container {
+    text-align: center; /* Középre igazítás */
+    margin-top: 20px; /* Távolság a táblázattól */
+    width: 100%; /* Teljes szélesség */
+}
+
+/* Visszaszámláló szöveg */
+.refresh-container p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Frissítés gomb */
+.refresh-container button {
+    padding: 10px 15px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.refresh-container button:hover {
+    background-color: #005bb5;
+}

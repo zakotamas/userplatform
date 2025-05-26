@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felhasználói Táblázat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Felhasználói Táblázat</h1>
+        <input type="text" id="nameInput" placeholder="Név">
+        <input type="text" id="emailInput" placeholder="Részleg">
+        <input type="number" id="ageInput" placeholder="ID">
+        <input type="text" id="cityInput" placeholder="Szanadság">
+        <select id="colorInput">
+            <option value="kék">Kék</option>
+            <option value="fehér">Fehér</option>
+            <option value="piros">Piros</option>
+            <option value="sárga">Sárga</option>
+        </select>
+        <button id="addButton" onclick="addUser()">Hozzáadás</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Név</th>
+                    <th>Részleg</th>
+                    <th>ID</th>
+                    <th>Szabadság</th>
+                    <th>Elfoglaltság</th>
+                    <th>Tevékenység</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+            </tbody>
+        </table>
+    </div>
+
+    <div class="refresh-container">
+    <p>Oldalfrissítés: <span id="countdown">10</span> másodperc múlva</p>
+    <button onclick="manualRefresh()">Frissítés most</button>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
